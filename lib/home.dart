@@ -14,7 +14,16 @@ class HomeScreen extends StatelessWidget {
               "User Created Succesfully",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
             ),
-          )
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          FlatButton(
+              color: Colors.blue,
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text("Back to Login Screen"))
         ],
       ),
     );
